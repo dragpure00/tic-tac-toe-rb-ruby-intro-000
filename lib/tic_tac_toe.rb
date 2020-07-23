@@ -151,7 +151,7 @@ def over?(board)
 end
 
 def play(board)
-  until over?(board)==ture||won?(board)==!false
+  until over?(board)==true||won?(board)==!false
     turn(board)
   end
   if won?(board)
