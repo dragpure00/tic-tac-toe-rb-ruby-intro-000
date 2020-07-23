@@ -149,3 +149,15 @@ def over?(board)
     return false
   end
 end
+
+def play(board)
+  until over?(board)==ture||won?(board)==!false
+    turn(board)
+  end
+  if won?(board)
+    winner(board)=="X"|| winner(board)=="O"
+    puts "Congratulations #{winner(board)} !"
+  elseif draw?(board)
+  puts "Cats Game"
+end
+end
